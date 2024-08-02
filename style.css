@@ -1,0 +1,197 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #2e2e2e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    height: 100vh;
+}
+
+/* Logo */
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilo da navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+/* Itens da navegação */
+nav ul li {
+    width: 100%;
+}
+
+/* Links da navegação */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex; /* Alinha o ícone e o texto horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Efeito ao passar o mouse */
+nav ul li a:hover {
+    background-color: #404040;
+}
+
+/* Estilo dos ícones */
+nav ul li i {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Botão de criar post, */
+.create-post {
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+.create-post:active{
+    transform: scale(0.95);
+}
+/* Fim do código do botão */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.shelf {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.book {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.book img {
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.book-info {
+    flex: 1;
+}
+
+.like {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.post {
+    background-color: #404040;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Estilo padrão para o ícone */
+.product-box i.bxs-heart {
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+    color: gray; /* Cor padrão para ícone não curtido */
+    cursor: pointer; /* Adiciona o cursor de mão para indicar interatividade */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+  }
+  
+  /* Estilo para o ícone quando curtido */
+  .product-box i.bxs-heart.curtido {
+    color: red; /* Cor para o ícone curtido */
+  }
+  
+  /* Estilo para o ícone quando não curtido */
+  .product-box i.bxs-heart.nao-curtido {
+    color: gray; /* Cor para o ícone não curtido */
+  }
+
+   /* Estilo básico para o botão e o contador */
+   .like-button {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+.like-button.curtido {
+    color: rgb(247, 247, 247);
+}
+
+.like-button i {
+    margin-right: 10px;
+}
+
+.like-count {
+    font-size: 16px;
+    margin-left: 5px;
+}
+  
